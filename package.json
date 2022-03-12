@@ -1,0 +1,40 @@
+{
+  "name": "saiyan_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshtokin/saiyan_db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eshtokin/saiyan_db/issues"
+  },
+  "homepage": "https://github.com/eshtokin/saiyan_db#readme",
+  "dependencies": {
+    "@babel/node": "^7.16.8",
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.3",
+    "@graphql-tools/schema": "^8.3.2",
+    "@prisma/client": "^3.10.0",
+    "apollo-server": "^3.6.3",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "graphql": "^16.3.0",
+    "graphql-tools": "^8.2.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.10.0"
+  }
+}
