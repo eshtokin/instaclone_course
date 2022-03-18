@@ -1,6 +1,7 @@
 import { hash } from 'bcrypt'
 import client from '../../client'
 import { protectedResolver } from '../users.utils'
+// import fs from 'fs'
 
 export default {
   Mutation: {
@@ -13,6 +14,11 @@ export default {
         console.log({
           avatar
         })
+        // action for save uploaded file
+        // const {filename, createReadStream} = await avatar;
+        // const readStream = createReadStream()
+        // const writeStream = fs.createReadStream(process.cwd() + "/uploads" + filename)
+        // writeStream.pipe(readStream)
 
         const hashingPassword = password ? await hash(password, 10) : null
 
